@@ -1,4 +1,4 @@
-# ⚡ Stellar QuickPay: Obsidian Edition
+# ⚡ Stellar QuickPay
 
 > A high-performance, premium-tier Stellar payment dashboard. Built with a focus on luxury UI/UX and robust error handling.
 
