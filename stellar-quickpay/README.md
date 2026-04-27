@@ -14,13 +14,12 @@ A high-performance, premium-tier Stellar dApp built for the **White Belt (Level 
 - **Validation**: Strict public key verification and pre-flight balance checks.
 
 ## 📸 Proof of Work
-*(Add your premium screenshots here)*
-- **Dashboard**: [Link to Wallet Connected Screenshot]
-- **Onboarding**: [Link to Friendbot Funding Screenshot]
-- **Transaction Success**: [Link to Green Hash Screenshot]
+- **Dashboard**: [![alt text](<media/Connect wallet.png>)]
+- **Onboarding**: [![alt text](media/Transaction.png)]
+- **Transaction Success**: [![alt text](media/Successful.png)]
 
 ## 🚀 Installation & Setup
-1. **Clone**: `git clone https://github.com/YOUR_USERNAME/stellar-quickpay.git`
+1. **Clone**: `git clone https://github.com/N-thnI/Stellar-QuickPay`
 2. **Install**: `npm install`
 3. **Run**: `npm run dev`
 4. **Note**: Ensure Freighter is set to **Testnet** via Settings > Network.
