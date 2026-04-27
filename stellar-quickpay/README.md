@@ -14,9 +14,15 @@ A high-performance, premium-tier Stellar dApp built for the **White Belt (Level 
 - **Validation**: Strict public key verification and pre-flight balance checks.
 
 ## 📸 Proof of Work
-- **Dashboard**: [![alt text](<media/Connect wallet.png>)]
-- **Onboarding**: [![alt text](media/Transaction.png)]
-- **Transaction Success**: [![alt text](media/Successful.png)]
+
+### Dashboard
+![Dashboard](./media/Connect-wallet.png)
+
+### Onboarding & Funding
+![Onboarding](./media/Transaction.png)
+
+### Transaction Success
+![Transaction Success](./media/Successful.png)
 
 ## 🚀 Installation & Setup
 1. **Clone**: `git clone https://github.com/N-thnI/Stellar-QuickPay`
