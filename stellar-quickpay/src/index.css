@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0B0B0B;
+    color: #E5E4E2;
+  }
+
+  /* Gold-thumb scrollbar */
+  ::-webkit-scrollbar        { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track  { background: #0F0F0F; }
+  ::-webkit-scrollbar-thumb  { background: #2E2E2E; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+  /* Remove number input spinners */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type='number'] { -moz-appearance: textfield; }
+}
+
+@layer utilities {
+  /* Gold text gradient — used on logo and headings */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #F5E070 0%, #D4AF37 50%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Primary gold button — gradient + lift shadow */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2
+           px-5 py-3 rounded-xl
+           font-bold text-sm tracking-wide text-[#0B0B0B]
+           bg-gold-gradient
+           shadow-gold-lift
+           transition-all duration-150
+           hover:bg-gold-gradient-hover hover:shadow-gold-lift-lg hover:-translate-y-px
+           active:translate-y-0 active:shadow-gold-lift
+           disabled:opacity-50 disabled:cursor-not-allowed
+           disabled:hover:translate-y-0 disabled:hover:shadow-gold-lift;
+  }
+
+  /* Silver outline button — secondary actions */
+  .btn-silver {
+    @apply inline-flex items-center gap-1.5
+           px-3 py-1.5 rounded-lg text-xs font-medium
+           border border-silver-600/60 text-silver-400
+           hover:border-silver-400 hover:text-silver-200
+           transition-colors duration-150;
+  }
+
+  /* Obsidian card shell */
+  .card {
+    @apply rounded-2xl border border-[rgba(229,228,226,0.10)]
+           bg-obsidian-800 shadow-card overflow-hidden;
+  }
+}
